@@ -14,10 +14,14 @@
         VALUES (#{bookName}, #{bookCounts}, #{bookDetail})
     </insert>
     <update id="updateBook" parameterType="Book">
-        UPDATE books SET book_name = #{bookName}, book_count = #{bookCount},
+        UPDATE books SET book_name = #{bookName}, book_counts = #{bookCounts},
         book_detail = #{bookDetail} where book_id = #{bookId}
     </update>
     <delete id="deleteBook" parameterType="long">
         DELETE FROM books WHERE book_id = #{bookId}
     </delete>
+
+    <select id="selectBookByBookName" resultType="Book">
+        SELECT * from books WHERE book_name = #{bookName}
+    </select>
 </mapper>

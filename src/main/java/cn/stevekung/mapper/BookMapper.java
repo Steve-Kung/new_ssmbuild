@@ -13,4 +13,6 @@ public interface BookMapper {
     public int updateBook(Book book);
     public int deleteBook(@Param("bookId") Long bookId);
 
+    public Book selectBookByBookName(@Param("bookName") String bookName);
+
 }

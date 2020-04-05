@@ -13,7 +13,7 @@ import java.util.List;
 public class BookServiceImpl implements BookService {
 
     @Autowired
-    BookMapper bookMapper;
+    private BookMapper bookMapper;
 
     public List<Book> selectBooks() {
         return bookMapper.selectBooks();
@@ -33,5 +33,9 @@ public class BookServiceImpl implements BookService {
 
     public int deleteBook(Long bookId) {
         return bookMapper.deleteBook(bookId);
+    }
+
+    public Book selectBookByBookName(String bookName) {
+        return bookMapper.selectBookByBookName(bookName);
     }
 }

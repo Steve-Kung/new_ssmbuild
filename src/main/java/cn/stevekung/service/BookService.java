@@ -10,4 +10,7 @@ public interface BookService {
     public int addBook(Book book);
     public int updateBook(Book book);
     public int deleteBook(Long bookId);
+
+
+    public Book selectBookByBookName(String bookName);
 }

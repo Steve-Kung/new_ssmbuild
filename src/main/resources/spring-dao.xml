@@ -51,7 +51,7 @@
     <!--<bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">-->
         <!--<constructor-arg index="0" ref="sqlSessionFactory"/>-->
     <!--</bean>-->
-    <!--<bean id="bookMapper" class="cn.stevekung.mapper.BookMapperImpl">-->
+    <!--<bean id="bookMapperImpl" class="cn.stevekung.mapper.BookMapperImpl">-->
         <!--<property name="sqlSession" ref="sqlSession"/>-->
     <!--</bean>-->
 
